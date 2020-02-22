@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+<section class="white-section">
+  <div class="container">
+    <h1 style="padding-top: 20px; padding-bottom: 20px;"> A myriad of locations. </h1>
+    {% for num in range(location.query.all()[::3]|length) %}
+    <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+      {% for location in location.query.all()[num::location.query.all()[::3]|length ] %}
+      <div class="col-md-4">
+        <img src="static\images\{{location.logo}}" style="width: 250px;">
+        <h3>{{location.name}}</h3>
+        <p>
+          {{location.address}}
+          <br>
+          There are {{ location.max_reservations - location.current_reservations }} spots left.
+        </p>
+        <form action="/reservation/{{location.name}}">
+          <button class="btn btn-dark btn-sm">
+            Reserve Your Spot.
+          </button>
+        </form>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock body %}

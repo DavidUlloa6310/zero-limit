@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zer0 Limit</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- STYLE SHEET -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+  {% block head %} {% endblock %}
+</head>
+
+<body>
+  <section class="black-section" style="padding-left: 100px; padding-right: 100px;">
+    <div style="padding-top: 30px; padding-bottom: 30px;">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="padding-bottom: 0px;">
+
+        <a class="navbar-brand" href="/home"><img src="\static\images\logo.png" height="100px" width="200px"></img></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/home#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home#carousel-images">Pictures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/store">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  {% block body %} {% endblock %}
+</body>
+
+</html>
