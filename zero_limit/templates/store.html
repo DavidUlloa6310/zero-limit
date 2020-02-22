@@ -12,13 +12,29 @@
         <p>
           {{location.address}}
           <br>
-          There are {{ location.max_reservations - location.current_reservations }} spots left.
+          {{location.schedule}}
         </p>
-        <form action="/reservation/{{location.name}}">
-          <button class="btn btn-dark btn-sm">
-            Reserve Your Spot.
-          </button>
-        </form>
+          <!-- Noscript content for added SEO -->
+        <noscript><a href="https://www.eventbrite.com/e/zer0-limit-learning-coding-robotics-3-d-printing-the-citadel-tickets-95795010455" rel="noopener noreferrer" target="_blank"></noscript>
+          <!-- You can customize this button any way you like -->
+          <button id="eventbrite-widget-modal-trigger-95795010455" type="button" class="btn btn-dark btn-sm">Buy Tickets</button>
+          <noscript></a>Buy Tickets on Eventbrite</noscript>
+          
+          <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+          
+          <script type="text/javascript">
+              var exampleCallback = function() {
+                  console.log('Order complete!');
+              };
+          
+              window.EBWidgets.createWidget({
+                  widgetType: 'checkout',
+                  eventId: '95795010455',
+                  modal: true,
+                  modalTriggerElementId: 'eventbrite-widget-modal-trigger-95795010455',
+                  onOrderComplete: exampleCallback
+              });
+          </script>
       </div>
       {% endfor %}
     </div>
