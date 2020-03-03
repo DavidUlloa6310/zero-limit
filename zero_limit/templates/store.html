@@ -1,5 +1,15 @@
 {% extends "layout.html" %}
 {% block body %}
+<style scoped>
+  .location-image {
+    width: 250px;
+  }
+  @media (max-width: 991px) {
+    .location-image {
+      width: 200px;
+    }
+  }
+</style>
 <section class="white-section">
   <div class="container">
     <h1 style="padding-top: 20px; padding-bottom: 20px;"> A myriad of locations. </h1>
@@ -7,7 +17,7 @@
     <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
       {% for location in location.query.all()[num::location.query.all()[::3]|length ] %}
       <div class="col-md-4">
-        <img src="static\images\{{location.logo}}" style="width: 250px;">
+        <img src="static\images\{{location.logo}}" class="location-image">
         <h3>{{location.name}}</h3>
         <p>
           {{location.address}}
