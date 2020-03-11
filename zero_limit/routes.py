@@ -10,3 +10,7 @@ def home():
 @app.route('/store')
 def store():
     return render_template('store.html', location = location)
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
