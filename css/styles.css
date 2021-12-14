@@ -1,0 +1,211 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-headings {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #00ffff;
+  padding-top: 100px;
+}
+
+@media (max-width: 1685px) {
+  .big-headings {
+    padding-top: 0px;
+  }
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.btn-dark {
+  background: #ff219b;
+}
+/* Sections */
+
+.black-section {
+  background-color: black;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.logo {
+  height: 50%;
+  width: 50%;
+}
+
+/* Download Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title .container-fluid {
+  padding: 3% 15% 10%;
+  text-align: left;
+}
+
+/* Title Image */
+
+.title-image {
+  height: 30em;
+  width: 30em;
+  /* padding-left: 100px; */
+}
+
+@media (max-width: 1044px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    height: 30em;
+    width: 30em;
+  }
+}
+/* FEATURES SECTION */
+
+.feature-box {
+  padding: 5%;
+}
+
+.feature-title {
+  line-height: 1.5;
+}
+
+.icon {
+  color: #ff219b;
+  padding-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #00ffff;
+}
+
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+/* TESTIMONIAL SECTION & PRESS*/
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #00ffff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  padding-bottom: 3%;
+}
+
+/* CAROUSEL */
+
+.carousel-img {
+  height: 75%;
+  width: 75%;
+}
+
+/* MAP SECTIOM */
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.price-text {
+  padding: 100px;
+}
+
+#pricing {
+  padding: 100px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#map-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* CALL TO ACTION! */
+
+.cta-heading {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: black;
+}
+
+/* FOOTER */
+#footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+.social-icon:hover {
+  color: white;
+}
